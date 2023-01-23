@@ -1,0 +1,37 @@
+<div class="bg-blue-100 p-8 h-screen">
+    <div class="w-3/4 bg-blue-200 mx-auto p-6">
+
+        <div class="w-2/5 bg-slate-200 mx-auto rounded p-6">
+            <h1 class="font-bold text-xl mb-5">Registro</h1>
+
+            <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+                <div>
+                    <div class="my-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div>
+                        <input type="text" name="email" placeholder="Ingrese correo" class="px-4 py-2 rounded-lg" formControlName="email">
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <div class="my-3">
+                        <label for="password">Pasword</label>
+                    </div>
+                    <div>
+                        <input type="password" name="password" placeholder="Ingrese password" class="px-4 py-2 rounded-lg" formControlName="password">
+                    </div>
+                </div>
+
+                <div>
+                    <button class="rounded-lg bg-blue-500 text-blue-900 px-6 py-2 my-6 hover:bg-blure-800 hover:text-white">Registrar</button>
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+    
+
+</div>
